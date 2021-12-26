@@ -1,0 +1,210 @@
+/*전체적인 레이아웃*/
+.App {
+  text-align: start;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+ul {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  border: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+a{
+  color: #fae100;
+  text-decoration-line : none;
+}
+
+
+
+/*상단 네비게이션 바*/
+#topMenu {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  border-bottom: 0.5px solid #D0D3D4;
+}
+
+#topMenu ul li { 
+  list-style: none; 
+  float: left; 
+  line-height: 50px; 
+  vertical-align: middle; 
+  text-align: center;
+} 
+
+#topMenu .menuLink { 
+  display: block; 
+  width: 150px; 
+  font-size: 16px; 
+  font-weight: bold; 
+} 
+  
+#topMenu .menuLink:hover { 
+  color: red; 
+  background-color: #4d4d4d; 
+}
+
+
+
+/*검색창*/
+#searchInput {
+  display: block; 
+  width: 91%;
+  background-image: url('https://jellychart.com/wp-content/uploads/2020/08/searchicon.png'); 
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  font-size: 16px;
+  padding: 15px 20px 10px 40px; 
+  border: 1px solid #ddd; 
+  margin: 30px 0px;
+}
+
+
+
+/*표*/
+table {
+    width: auto;
+    border-top: 0.5px solid #D0D3D4;
+    border-bottom: 0px solid #D0D3D4;
+    border-right: 0px solid #D0D3D4;
+    border-left: 0px solid #D0D3D4;
+    border-collapse: collapse;
+}
+th, td {
+    border-top: 0px solid #D0D3D4;
+    border-bottom: 0.5px solid #D0D3D4;
+    border-right: 0px solid #D0D3D4;
+    border-left: 0px solid #D0D3D4;
+    text-align: left;
+    vertical-align: middle;
+    padding-top: 23px;
+    padding-bottom: 15px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+tr:hover{
+    background-color: #373d48;
+}
+
+
+
+/*PC 중단점*/
+@media (min-width: 1px) {
+  .star{
+    font-size: 14px;
+    color: #ff7f00;
+  }
+  table {
+    margin: 0em 0.5em 0em 0.5em;
+  }
+  .top{
+      margin: 0em 1em 0.2em 1em;
+      font-size: 15px;
+      height: 30px;
+  }
+  .all{
+    float: left;
+  }
+  .update{
+      float: right;
+  }
+  .title {
+    color: #c04600;
+    font-size: 19px;
+    width: 98%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 6px;
+  }
+  .meta_1 {
+      color: #8c8c8c;
+      font-size: 14px;
+      margin-bottom: 6px;
+  }
+  .meta_2 {
+      display: inline;
+  }
+  .meta_3 {
+      display: none;
+  }
+  .des {
+      font-size: 14px;
+      width: 98%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+  }
+  .serial{
+      text-align: center;
+      font-size: 13px;
+  
+  }
+  .dday{
+      text-align: center;
+      font-size: 15px;
+      color: #ff0000;
+  }
+  .col_1{
+    width: 14%;
+  }
+  .col_2{
+      display: table-column;
+      width: 10%;
+  }
+  .col_3{
+      width: 76%;
+  }
+  .td_1{
+      display: table-cell;
+  }
+  .td_2{
+      background-color: #fffbe6;
+      padding: 10px 20px 6px 10px;
+  }
+  .ad{
+      margin: 10px 2em 10px 2em;
+      text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
